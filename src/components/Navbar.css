@@ -1,52 +1,55 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  height: 80px;
+  background: linear-gradient(90deg, rgb(78, 4, 103) 0%, rgb(78, 4, 103) 250%);
+  height: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
+  font-weight: 300;
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
+
 .navbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 30px;
   max-width: 1500px;
 }
 
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }
 
 .fa-typo3 {
   margin-left: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 0.9rem;
 }
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 5px;
   list-style: none;
   text-align: center;
   width: 60vw;
-  justify-content: end;
-  margin-right: 2rem;
+  justify-content: left;
+  margin-right: 50rem;
 }
 
 .nav-item {
-  height: 80px;
+  height: 30px;
 }
 
 .nav-links {
@@ -54,7 +57,21 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.4rem;
+  height: 100%;
+}
+
+.nav-links-home {
+  margin-left: 25px;
+}
+
+.nav-bar {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.2rem 0.2rem;
+  font-weight: 200;
   height: 100%;
 }
 
@@ -86,7 +103,7 @@
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 30px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -102,7 +119,7 @@
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
   }
@@ -115,37 +132,38 @@
 
   .navbar-logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    /*align-items: center;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    align-items: center;
+    transform: translate(-100%, -50%);
+    font-size: 0.9rem;
     cursor: pointer;
   }
 
   .fa-times {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .nav-links-mobile {
     display: block;
     text-align: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border-radius: 4px;
     width: 80%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     background-color: transparent;
     color: #fff;
-    padding: 14px 20px;
     border: 1px solid #fff;
     transition: all 0.3s ease-out;
   }
