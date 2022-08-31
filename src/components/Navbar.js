@@ -52,14 +52,11 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/help"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/help" className="nav-links" onClick={closeMobileMenu}>
                 Help
               </Link>
-            </li> 
+            </li>
+            <li className="nav-v1">|</li>
             <li className="nav-item">
               <Link
                 to="/dashboard"
@@ -71,13 +68,14 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/dashboard"
+                to="/collection"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Collection
               </Link>
             </li>
+            <li className="nav-v1"/>
             <li className="nav-item">
               <Link
                 to="/dashboard"
@@ -96,18 +94,28 @@ function Navbar() {
                 Preferences
               </Link>
             </li>
-
-            <li>
+            <li className="nav-item">
               <Link
-                to="/sign-up"
-                className="nav-links-mobile"
+                to="/sign-in"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Sign In
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/register"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Register
+              </Link>
+            </li>
+            <li className="nav-item">
+              {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+            </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
         </div>
       </nav>
     </>
